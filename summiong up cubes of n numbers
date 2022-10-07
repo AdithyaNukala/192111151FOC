@@ -1,0 +1,18 @@
+#include<stdio.h>
+long cube_sum_n_natural(int n)
+{
+	long sum=0;
+	int i;
+	for(i=1;i<=n;i++)
+	{
+		sum+=i*i*i;
+	}
+	return sum;
+}
+main()
+{
+	int n;
+	printf("enter value of n:");
+	scanf("%d",&n);
+	printf("result is:%1d",cube_sum_n_natural(n));
+}
